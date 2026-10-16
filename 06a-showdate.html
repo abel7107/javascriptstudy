@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Show Date</title>
+</head>
+<body>
+  <p>show date</p>
+  <script>
+    const date = new Date();
+    const currentDate = date.toLocaleDateString();
+    const currentTime = date.toLocaleTimeString();
+    const hour = date.getHours();
+    let greeting;
+
+     if (hour >= 6 && hour < 12) {
+            greeting = "Good Morning!";
+        } else if (hour >= 12 && hour < 17) {
+            greeting = "Good Afternoon!";
+        } else if (hour >= 17 && hour < 21) {
+            greeting = "Good Evening!";
+        } else {
+            greeting = "Good Night!";
+        }
+ 
+    console.log("Greeting: " + greeting);
+    console.log("Current Date: " + currentDate);
+    console.log("Current Time: " + currentTime);
+  </script>
+</body>
+</html>
