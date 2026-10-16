@@ -13,15 +13,16 @@
     const currentTime = date.toLocaleTimeString();
     const hour = date.getHours();
     let greeting;
+    const name = "John"; // Replace with your name
 
      if (hour >= 6 && hour < 12) {
-            greeting = "Good Morning!";
+            greeting = `Good Morning, ${name}!`;
         } else if (hour >= 12 && hour < 17) {
-            greeting = "Good Afternoon!";
+            greeting = `Good Afternoon, ${name}!`;
         } else if (hour >= 17 && hour < 21) {
-            greeting = "Good Evening!";
+            greeting = `Good Evening, ${name}!`;
         } else {
-            greeting = "Good Night!";
+            greeting = `Good Night, ${name}!`;
         }
  
     console.log("Greeting: " + greeting);
